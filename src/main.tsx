@@ -4,6 +4,7 @@ import "./styles/styles.css";
 import { RouterProvider } from "@tanstack/react-router";
 import { router } from "@/router.tsx";
 import { OmnikitProvider } from "@/theme/components/provider.tsx";
+import "unfonts.css";
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
