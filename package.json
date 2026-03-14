@@ -1,0 +1,47 @@
+{
+	"name": "portfolio",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --host --port 5180",
+		"build": "tsc -b && vite build",
+		"lint": "bun run biome format --write",
+		"preview": "vite preview --host --port 5180",
+		"typegen:chakra": "chakra typegen ./src/theme/index.ts",
+		"typegen:watch": "chokidar 'src/theme' -c 'bun run typegen:chakra'"
+	},
+	"dependencies": {
+		"@chakra-ui/cli": "^3.30.0",
+		"@chakra-ui/react": "^3.30.0",
+		"@m3e/loading-indicator": "^1.3.1",
+		"@tabler/icons-react": "^3.38.0",
+		"@tanstack/react-query": "^5.90.20",
+		"@tanstack/react-query-devtools": "^5.91.1",
+		"@tanstack/react-router": "^1.143.11",
+		"@tanstack/router-plugin": "^1.143.11",
+		"next-themes": "^0.4.6",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.1",
+		"@types/node": "^24.10.1",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.1.1",
+		"babel-plugin-react-compiler": "^1.0.0",
+		"chokidar-cli": "^3.0.0",
+		"eslint": "^9.39.1",
+		"eslint-plugin-react-hooks": "^7.0.1",
+		"eslint-plugin-react-refresh": "^0.4.24",
+		"globals": "^16.5.0",
+		"typescript": "~5.9.3",
+		"typescript-eslint": "^8.48.0",
+		"vite": "^8.0.0-beta.13",
+		"vite-plugin-svgr": "^4.5.0"
+	},
+	"overrides": {
+		"vite": "^8.0.0-beta.13"
+	}
+}
