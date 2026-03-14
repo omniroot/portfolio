@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite --host --port 5180",
-		"build": "tsc -b && vite build",
+		"build": "bun run ./scripts/build.ts",
 		"lint": "bun run biome format --write",
 		"preview": "vite preview --host --port 5180",
 		"typegen:chakra": "chakra typegen ./src/theme/index.ts",
